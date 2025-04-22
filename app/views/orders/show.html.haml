@@ -1,0 +1,17 @@
+.card.w-50.new_form_card
+  %h1 Order Details
+  %p
+    %strong Item Name:
+    = @order.item_name
+  %p
+    %strong Restaurant Name:
+    = @order.restaurant.name
+  %p
+    %strong Quantity:
+    = @order.quantity
+  %p
+    %strong Price:
+    $#{@order.price * @order.quantity} 
+  %p
+    %strong Scheduled Time:
+    = @order.schedule_time.strftime("%d %B %Y %I:%M %p")

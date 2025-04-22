@@ -1,0 +1,5 @@
+.card.w-50.new_form_card
+  %h1 Your Orders
+  %ul
+    - @orders.each do |order|
+      %li= link_to "Order ##{order.id} - #{order.item_name}", order_path(order)

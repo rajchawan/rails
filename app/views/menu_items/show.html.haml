@@ -1,0 +1,15 @@
+.card.w-50.new_form_card
+  %h1
+    Order #{@menu_item.item_name}
+  = form_with(model: @order, url: orders_path(menu_item_id: @menu_item.id)) do |f|
+    = render 'home/flash_messages' if flash.any?
+    %div
+      = f.label :quantity
+      = f.number_field :quantity, class: "form-control "
+    %div
+      = f.label :schedule_time, 'Schedule Time'
+      = f.datetime_select :schedule_time, class: "form-select "
+    %div
+      = f.submit "Place Order", class: "btn btn-primary"
+
+

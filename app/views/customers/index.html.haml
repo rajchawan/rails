@@ -1,0 +1,27 @@
+%h4{style: "margin-left: 110px; margin-top: 100px; text-align: center;"} ORDERS
+
+%div.row{style: "margin-top: 6%;"}
+
+%table.table.table-bordered.table-striped.text-center
+  %thead.table-dark
+    %tr
+      %th
+        = sort_link(@q, "id", 'ID')
+      %th
+        = sort_link(@q, "name", "Name")
+      %th
+        = sort_link(@q, "status", "Status")
+      %th
+        = sort_link(@q, "schedule time", "Scheduled Time")
+
+  %tbody
+    - @orders.each do |order|
+      %tr.content-row
+        %td=order.id
+        %td=order.restaurant.name
+        %td= order.status
+        %td= order.scheduled_time 
+        
+
+%div.pagination-wrapper{style: "text-align: center;"}
+  = will_paginate(@restaurants, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer)

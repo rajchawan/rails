@@ -1,0 +1,490 @@
+@import "bootstrap";
+ 
+@import 'font-awesome';
+
+.form-label {
+ margin-bottom: 1px;
+}
+
+.form-control{
+ margin-bottom: 10px;
+}
+
+.login_class{
+ margin-bottom: 5px;
+}
+
+.btn-primary{
+ margin-top: 3px;
+}
+
+.mt-3 {
+  margin-top: 0rem !important; 
+}
+
+.login{
+ padding-right: 20px;
+ padding-left: 20px;
+}
+
+.max-auto{
+ margin-left: 520px;
+}
+
+.notice{
+ position: fixed;
+ color: green;
+ left: 50%;
+ top: 70px;
+}
+
+.alert {
+ color: red;
+ display: flex;
+ position: fixed;
+ left: 47%;
+ top: 50px;
+}
+
+.edit_registration_page{
+ margin-left: 30%;
+ 
+}
+
+.edit_form_card{
+ margin-left: 30%;
+}
+
+
+.card-header.avatar_error{
+ background-color: #e9e9e9;
+ margin: 10px;
+ border-radius: 20px;
+ text-align: left;
+}
+
+.Delete-button{
+ margin-left: 20px;
+}
+
+
+.main-page-login{
+ margin-left: px;
+}
+
+.Logout-button{
+ margin-left: 00px;
+}
+
+.login-page{
+ margin-top: 200px;
+}
+
+.registration-page{
+ margin-bottom: 200px;
+}
+
+.card{
+ margin-top: 120px;
+ margin-bottom: 80px;
+}
+
+ .profile-photo{
+   margin-left: 1080px;
+ }
+
+ .default-photo{
+   width: 275px;
+   height: 250px;
+   margin-bottom: 10px
+ }
+.rounded-pill {
+ border: 1.5px solid black;
+}
+
+
+.card.w-50.new_form_card{
+ margin-left: 30%;
+}
+
+.transition-icon {
+ transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.transition-icon:active {
+ transform: scale(1.5); 
+ color: #ff5733;        
+}
+
+input.btn.btn-primary.btn-block{
+ margin-right: 4px;
+}
+div.center{
+ justify-content: center;
+ display: flex;
+}
+ .photo_field{
+   width: 60px;
+   height: 45px;
+   margin-left: 1070px;
+ }
+ .photo-enter-field{
+   height: 40px;
+   margin: auto;
+   margin-top: 10px;
+   width: 400px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .edit_avatar_card{
+   text-align: center;
+   margin-left: 30%;
+ }
+
+ .login_button{
+   width: 85px;
+ }
+ .card-body{
+   margin-bottom: 20px;
+ }
+
+ .card.w-50.mx-auto.edit_user{
+   margin-top: 120px;
+ }
+
+ .edit_avatar_card.xyz{
+   text-align: center;
+ }
+.sidebar{
+ height: 673px;
+}
+.registration-page{
+ height: 700px;
+}
+
+.project_card{
+ text-align: center;
+ margin-left: 30%;
+}
+
+.navbar.navbar-expand-lg.bg-body-tertiary    {
+ background-color:#161212!important;
+ margin-left: 225px;
+}
+
+.sidebar .nav-link {
+ color: #171515;
+ padding-left: 20px;
+
+}
+
+.navbar-brand {
+ color: #ffffff; 
+}
+
+.navbar-brand .fa {
+ color: #ffffff;
+}
+
+.nav-item.divider {
+ border-bottom: 1px solid #dee2e6; 
+ margin-bottom: 0.5rem; 
+ padding-bottom: 0.5rem; 
+} 
+
+.divider {
+ border-bottom: 1px solid #dee2e6; 
+ margin-bottom: 0.5rem; 
+ padding-bottom: 0.5rem; 
+} 
+
+.profile-image {
+ border: 2px solid #84888e; 
+}
+
+.nav-link:hover {
+ background-color: #070708; 
+ color: #e7e7e7; 
+}
+
+.sidebar {
+ padding: 20px; 
+}
+
+.nav-link {
+ padding: 10px 6px; 
+}
+
+a.nav-link.dropdown-toggle{
+ padding: 20px;
+}
+
+.nav-item.divider.logout{
+ padding: 20px;
+}
+
+.btn-primary {
+ --bs-btn-bg: #040404;
+ --bs-btn-border-color: #ffffff;
+ --bs-btn-hover-color: #fffefe;
+ --bs-btn-hover-bg: #7b8088;
+}
+
+.max-width{
+ width: 420px;
+ margin-left: 1%;
+}
+
+#sidebar {
+ position: fixed;
+ padding: 1px;
+ top: 0;
+ left: 0;
+ height: 100vh; 
+ width: 225px; 
+ background-color: #fafafa; 
+ padding-top: 20px; 
+ z-index: 1000; 
+ overflow-y: auto; 
+ overflow-x: hidden; 
+}
+
+.sidebar::-webkit-scrollbar {
+ width: 8px; 
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+ background-color: #7b8088; 
+ border-radius: 4px; 
+}
+
+.sidebar::-webkit-scrollbar-track {
+ background-color: #f8f9fa; 
+}
+
+.form-select{
+ width: 30%;
+}
+
+select#milestone_status.form-select{
+ width: 100%;
+}
+
+.offset-md-4 {
+ margin-left: 78.2%;
+}
+
+a.sort_link{
+ color: white;
+}
+
+.table{
+ border-radius: 25px;
+ text-align: center;
+ padding-top: 25px;
+ padding-bottom: 25px;
+ width: 75%;
+ margin-left: 350px;
+ position: relative;
+}
+
+
+.previous_page{
+ text-align: center;
+ margin-left: 275px;
+}
+
+.pagination{
+ --bs-pagination-font-size: 0.75rem;
+}
+
+.heading{
+ color: #f8f9fa;
+ background-color: #040404;
+}
+
+.filter {
+ margin-left: 0px;
+ margin-top: 0px;
+ width: 215px;
+ position: absolute;
+ left: 386px;
+ top: 175px;
+ right: 65%;
+ background-color: white;
+ padding-left: 0;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ border-radius: 5px;
+}
+
+.table-header{
+ background-color: #070708!important;
+ color: white!important;
+}
+
+nav.pagination{
+ margin-left: 400px;
+}
+
+a {
+ color: rgb(7, 1, 1);
+ text-decoration: none;
+}
+
+a:hover{
+ color: rgb(88, 215, 219);
+}
+
+th{ 
+ background-color:#dee2e6 ;
+}
+
+a.nav-link.dropdown-toggle.collapsed::after{
+ transform: rotate(0deg);
+ transition: .3s ease-in-out;
+}
+
+.head_list{
+ margin-left: 110px;
+
+ text-align: center;
+ margin-top: 4%;
+ text-decoration: solid;
+}
+
+.pdf-view{
+ height: 350px;
+ 
+}
+.card.w-50.timelog{
+ margin-top: 10px;
+ margin-left: 30%;
+}
+
+.card-body.comments{
+ margin: 2%;
+}
+
+.card.w-50.comments{
+ margin-left: 30%;
+ margin-top: 10px;
+}
+
+.attachment-image{
+ border-radius: 2%;
+ border-style: solid;
+ height: 300px;
+ margin-top: 15px;
+}
+
+.status_field_task{
+ width: 15%;
+}
+
+.new_order{
+  margin-left: 250px;
+}
+
+a.sort_link{
+ color: white;
+}
+
+a.sor_link:hover{
+ color: #0827da;
+}
+select#task_status.form-select{
+ width: 100%;
+}
+
+
+.btn-light{
+ --bs-btn-bg: #d4d6d7;
+}
+
+.card.w-50.mx-auto.task_template.attachment{
+ height: 40%;
+}
+
+.link{
+ color: #000104;
+}
+.card-body.notification{
+ box-shadow: 1px 1px 2px 2px #d1cbcb;
+ padding: 0px 0px 0px 0px;
+}
+
+.notification-body{
+ padding: 15px;
+ margin-bottom: -10px;
+}
+
+h1.display-6{
+ position: fixed;
+ left: 45vw;
+ top: 45vh;
+
+}
+
+p {
+ margin-top: 0;
+ margin-bottom: 0rem;
+}
+
+div.project-buttons{
+ margin-top: 20px;
+}
+
+.col-lg-6.chart{
+ margin-top: -15px;
+}
+
+i.fa.fa-bell{
+ margin-right: 10px;
+}
+
+.container.height{
+
+ padding-right: 15px;
+ padding-left: 15px;
+ margin-right: auto;
+ margin-left: 285px;
+ margin-top: 0px;
+ max-width: 75%;
+ overflow:hidden;
+ min-height:0px;
+}
+
+nav.navbar.navbar-expand-lg.bg-body-tertiary{
+ position: fixed;
+ z-index: 1;
+ width: 89%;
+}
+
+.card.w-50.mx-auto.comments{
+ margin-top: 10px;
+}
+
+div.notice_avatar{
+ color: rgb(0, 0, 0);
+ text-shadow: #040404;
+}
+
+.card.chart{
+ margin-top: 10px;
+}
+
+.navbar{
+ --bs-navbar-brand-hover-color: rgb(107, 103, 103);
+}
+
+.time_field{
+ width: 200px;
+}
+
+.back-button{
+ margin-left: 13%;
+ margin-top: 4%;
+}

@@ -1,0 +1,29 @@
+%body
+  %nav.navbar.navbar-expand-lg.bg-body-tertiary
+    .container-fluid
+      %a.navbar-brand{href: root_path}
+        %i.fa.fa-home
+        Home        
+      %button.navbar-toggler{"aria-controls" => "sidebar", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#sidebar", "data-bs-toggle" => "collapse", type: "button"}
+        %span.navbar-toggler-icon
+
+  .container-fluid
+    .row
+      #sidebar.col-md-3.col-lg-2.d-md-block.bg-light.sidebar
+        .position-sticky.pt-3
+          %p.text-center{ style: "font-weight: bold; font-size: 1.2em; color: #171515; margin-top: 10px;" }
+            = "#{current_customer.first_name} #{current_customer.last_name}"
+          %ul.nav.flex-column
+            %li.nav-item.divider
+              %a.nav-link{href: restaurants_path, data: { 'turbo-method': :get }}
+                %i.fa.fa-suitcase
+                Restaurants
+
+            %li.nav-item.divider
+              %a.nav-link{href: orders_path, data: { 'turbo-method': :get }}
+                %i.fa.fa-tasks
+                Order History
+            %li.nav-item.divider
+              %a.nav-link{href: destroy_customer_session_path, data: { 'turbo-method': :delete }}
+                %i.fa.fa-sign-out
+                Log Out

@@ -1,0 +1,18 @@
+- flash.each do |type, notice|
+  - if type == 'error'
+    .card-header.avatar_error
+      %div{class: "text-danger", style: "color: red;"}
+        %h5 Errors :-
+        - if notice.include?(',')
+          - notice.split(',').each do |message|
+            %p= message.strip
+        - else
+          = notice
+  - elsif type == 'success'
+    %div{class: "text-success", style: "color: green;"}
+      - if notice.include?(',')
+        %p Success :-
+        - notice.split(',').each do |message|
+          %p= message.strip
+      - else
+        = notice

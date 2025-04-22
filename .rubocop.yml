@@ -1,0 +1,138 @@
+AllCops:
+  DisabledByDefault: true
+  SuggestExtensions: false
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+
+# Checks for consistent assignment indentation
+Layout/AssignmentIndentation:
+  Enabled: true
+
+# Checks for consistent indentation of comments
+Layout/CommentIndentation:
+  Enabled: true
+
+# Checks for empty lines within code
+Layout/EmptyLines:
+  Enabled: true
+
+# Ensures there's a blank line between method definitions
+Layout/EmptyLineBetweenDefs:
+  Enabled: true
+
+# Ensures consistent indentation for the first hash element
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+# Ensures consistent indentation within the code
+Layout/IndentationConsistency:
+  Enabled: true
+
+# Ensures consistent indentation style (e.g., spaces or tabs)
+Layout/IndentationStyle:
+  Enabled: true
+
+# Ensures consistent width of indentation
+Layout/IndentationWidth:
+  Enabled: true
+
+# Ensures alignment of rescue and ensure keywords
+Layout/RescueEnsureAlignment:
+  Enabled: true
+
+# Checks for spaces around block parameters
+Layout/SpaceAroundBlockParameters:
+  Enabled: true
+
+# Checks for space before block braces
+Layout/SpaceBeforeBlockBraces:
+  Enabled: true
+
+# Checks for spaces inside block braces
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+
+# Checks for spaces inside hash literal braces
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: true
+
+# Ensures parentheses around method calls are consistent
+Lint/RequireParentheses:
+  Enabled: true
+
+# Checks for trailing whitespace
+Layout/TrailingWhitespace:
+  Enabled: true
+
+# Ensures identifier names are ASCII-only
+Naming/AsciiIdentifiers:
+  Enabled: true
+
+# Ensures class and module names are CamelCase
+Naming/ClassAndModuleCamelCase:
+  Enabled: true
+
+# Ensures file names are snake_case
+Naming/FileName:
+  Enabled: true
+
+# Ensures method names are snake_case
+Naming/MethodName:
+  Enabled: true
+
+# Ensures predicate method names end with a question mark
+Naming/PredicateName:
+  Enabled: true
+
+# Ensures variable names are snake_case
+Naming/VariableName:
+  Enabled: true
+
+# Prefer `&&` over `and` and `||` over `or`
+Style/AndOr:
+  Enabled: true
+
+# Ensures consistent block delimiters
+Style/BlockDelimiters:
+  Enabled: true
+
+# Ensures hash syntax consistency
+Style/HashSyntax:
+  Enabled: true
+
+# Ensures that the strings are in single quotes
+Style/StringLiterals:
+    Enabled: true
+
+# Ensures numeric literals are formatted correctly
+Style/NumericLiterals:
+  Enabled: true
+
+# Ensures the Cyclomatic Complexity is at max 15
+Metrics/CyclomaticComplexity:
+  Enabled: true
+  Max: 15
+
+# Ensures the Perceived Complexity is at max 15
+Metrics/PerceivedComplexity:
+  Enabled: true
+  Max: 15
+
+# Ensures the Method Length is at max 15
+Metrics/MethodLength:
+  Exclude:
+    - "lib/**/*"
+  Max: 15
+
+# Ensures the Line length
+Layout/LineLength:
+  Enabled: true
+  Max: 200
+
+# Ensures the block length
+Metrics/BlockLength:
+  Exclude:
+    - "spec/**/*"
+    - "config/routes.rb"
+  Max: 30

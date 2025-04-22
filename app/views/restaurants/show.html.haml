@@ -1,0 +1,33 @@
+
+%h4{style: "margin-left: 110px; margin-top: 100px; text-align: center;"}  Menu for #{@restaurant.name}
+
+%table.table.table-bordered.table-striped.text-center
+  %thead.table-dark
+    %tr
+      %th ID
+        
+      %th Name
+       
+      %th Price
+       
+  %tbody
+    - @menu_items.each do |menu_item|
+      %tr.content-row
+        %td=menu_item.id
+        %td
+          %a{href: menu_item_path(menu_item)}= menu_item.item_name
+        %td= menu_item.price
+%div.pagination-wrapper{style: "text-align: center;"}
+
+
+
+-# .card.w-50.new_form_card
+-#   %h1
+-#     Menu for #{@restaurant.name}
+-#   %ul
+-#     - @menu_items.each do |item|
+-#       %li
+-#         = link_to item.item_name, menu_item_path(item)
+-#       \- $#{item.price}
+
+

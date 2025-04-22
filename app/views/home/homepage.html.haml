@@ -1,0 +1,9 @@
+- if customer_signed_in? 
+  %h1.display-6
+    = "Hello #{current_customer.first_name} #{current_customer.last_name}!" 
+- unless customer_signed_in? 
+  .main-txt{style: "margin-top:300px;"}
+  %h1{style: "text-align: center;"} Welcome to Online Food Delivery System
+  %div{style: "text-align: center; margin-top: 30px"}
+    = link_to "Login", new_customer_session_path, class: "btn btn-primary main-page-login"
+    = link_to "Register", new_customer_registration_path, class: "btn btn-primary main-page"

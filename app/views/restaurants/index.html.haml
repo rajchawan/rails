@@ -1,0 +1,37 @@
+%h4{style: "margin-left: 110px; margin-top: 100px; text-align: center;"} LIST OF RESTAURANTS
+
+%div.row{style: "margin-top: 6%;"}
+  %div.col-md-4.offset-md-4.mb-3
+    = search_form_for @q, url: request.path, method: :get, class: 'd-flex' do |f|
+      %label{for: "cuisine", class: "sr-only"} cuisine
+      = f.select :cuisine_eq, options_for_select([['All cuisine', ''], ['Indian', '0'], ['Chinese', '1'], ['Italian', '2']], selected: params.dig(:q, :cuisine_eq)),{ }, {class: "form-select mr-2"}
+      = f.submit 'Filter', class: 'btn btn-primary', style: "margin-left: 15px;"
+
+
+%table.table.table-bordered.table-striped.text-center
+  %thead.table-dark
+    %tr
+      %th
+        = sort_link(@q, :id, 'ID')
+      %th
+        = sort_link(@q, :name, "Name")
+      %th
+        = sort_link(@q, :rating, "Star")
+      %th
+        = sort_link(@q, :cuisine, "Cuisine")
+      %th
+        = sort_link(@q, :operating_hours, "Operating Hours")
+
+  %tbody
+    - @restaurants.each do |restaurant|
+      %tr.content-row
+        %td=restaurant.id
+        %td
+          %a{href: restaurant_path(restaurant.id), data: { 'turbo-method': :get }}= restaurant.name
+        %td= restaurant.star
+        %td= restaurant.cuisine
+        %td= restaurant.closing_time
+        
+
+%div.pagination-wrapper{style: "text-align: center;"}
+  = will_paginate(@restaurants, renderer: WillPaginate::ActionView::Bootstrap4LinkRenderer)
